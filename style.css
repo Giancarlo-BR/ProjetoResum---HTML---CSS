@@ -1,0 +1,139 @@
+@font-face {
+    font-family:'Trench' ;
+    src: url(trench/trench100.ttf);
+}
+
+.hexagono img{
+    position: relative;
+    right: -1.6px;
+}
+
+body{
+    color: white;
+    background-color: #121212;   
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+h1{
+    font-family: "Trench", sans-serif;
+    position: relative;
+    font-size: 28px;
+}
+
+.subtitulo{
+    position: relative;
+    font-size: 25px;
+    font-family: "Trench", sans-serif;
+    color: aqua;
+}
+
+.lista-skills{
+    flex-direction: column;
+    display: flex;
+    line-height: 28px;
+    position: relative;
+    height: auto;
+    list-style: none;
+}
+.lista-skills{
+    margin-top: 0.8px;
+    display: flex;
+    align-items: flex-start;
+    gap: 7.5px;
+}
+
+.lista-skills img {
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+    transform: translateY(2.5px);
+}
+
+.data{
+    border-radius: 14%;
+    margin-top: 23px;
+    box-shadow: 0 0 15px 1px #00a1ff;
+
+}
+
+.data,
+button{
+    font-size: 18px;
+
+}
+
+.secao--hero{
+    background-image: url(https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/660d9e60b52c66db2e67e0b4_%5BBACKGROUND%5D%20-%20BANNER%2001%20-%20WJS1.webp);
+    background-position: 50%;
+    background-size: cover;
+}
+
+
+.data img{
+    
+    width: 150px;
+    height: auto;
+    position: relative;
+    right: -31%; 
+    transform: translateY(20px);
+}
+
+.data strong{
+font-size: medium;
+}
+
+.data p{
+    padding: 30px;
+    position: relative;
+    right: 20px
+}
+
+
+
+button {
+  display: block;
+  margin: 20px;
+}
+
+
+.descricao {
+    position: relative;
+    right: -20px;
+    nav-up: 10px;
+    max-width: 600px;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    text-align: justify;
+    line-height: 1.6;
+    color: white;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #050505;
+    box-shadow: 0 0 25px 5px #00a1ff;
+    padding: 35px 27px;
+    border-radius: 20px;
+    max-width: 57%;
+    gap: 12px;
+}
