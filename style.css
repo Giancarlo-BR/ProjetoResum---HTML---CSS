@@ -1,3 +1,13 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
 @font-face {
     font-family:'Trench' ;
     src: url(trench/trench100.ttf);
@@ -21,6 +31,14 @@ body{
     font-style: normal;
     font-size: 16px;
 }
+
+h2{
+    font-size: 42px;
+}
+h3{
+    font-size: 23px;
+}
+
 h1{
     font-family: "Trench", sans-serif;
     position: relative;
@@ -69,6 +87,10 @@ button{
 
 }
 
+section{
+    padding: 60px 20px;
+}
+
 .secao--hero{
     background-image: url(https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/660d9e60b52c66db2e67e0b4_%5BBACKGROUND%5D%20-%20BANNER%2001%20-%20WJS1.webp);
     background-position: 50%;
@@ -81,7 +103,7 @@ button{
     width: 150px;
     height: auto;
     position: relative;
-    right: -31%; 
+    right: -32%; 
     transform: translateY(20px);
 }
 
@@ -98,8 +120,32 @@ font-size: medium;
 
 
 button {
-  display: block;
+  width: 200px;
+  height: 60px;
+  background-color: #5849e2;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: 4px solid #004c78;;
+  border-radius: 12px;
+  cursor: pointer;
   margin: 20px;
+  display: block;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #14053d;
+  transform: scale(1.05);
+}
+
+.realce{
+    color: #00a1ff;
+}
+
+button:active {
+  transform: scale(0.98);
 }
 
 
@@ -115,25 +161,89 @@ button {
     color: white;
 }
 
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
 
-.container{
+
+.container {
+    display: flex;
     max-width: 1000px;
     margin: 0 auto;
+    align-items: flex-end;
+}
+
+.container--coluna {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 40px;
+    align-items: center; /* ou center, dependendo do que você quiser */
+}
+
+
+.data{border: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.data:hover {
+    border: 3px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.Gian{
+    position: relative;
+    height: auto;
+    mask-image: radial-gradient(circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+    -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
 }
 
 .card {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #050505;
     box-shadow: 0 0 25px 5px #00a1ff;
-    padding: 35px 27px;
+    padding: 36px 46px;
     border-radius: 20px;
-    max-width: 57%;
+    max-width: 59%;
     gap: 12px;
+    
+}
+
+/* Disclaimer */
+
+.secao--disclaimer{
+padding: 30px 20px;
+box-shadow: 0 15px 15px 0 rgb(0 0 0 / 50%);
+}
+
+
+.disclaimer{
+color: #7c7f7f;
+font-size: 15px ;
+
+}
+
+.sobre{
+  background-color: #1c1c1c;
+  padding: 20px 30px;
+  border-radius: 10px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.cursos_cabecalho{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-width: 200px;
+}
+
+
+.sobre_icone{
+  max-width: 53px;
+  background-color: #141213;
+  border-radius: 7.5px;
+  border: 3px solid #262427
 }
