@@ -221,6 +221,7 @@ box-shadow: 0 15px 15px 0 rgb(0 0 0 / 50%);
 .disclaimer{
 color: #7c7f7f;
 font-size: 15px ;
+text-align: center;
 
 }
 
@@ -229,7 +230,7 @@ font-size: 15px ;
   padding: 20px 30px;
   border-radius: 10px;
   display: flex;
-  gap: 30px;
+  gap: 13px;
   align-items: center;
 }
 
@@ -240,6 +241,24 @@ font-size: 15px ;
   min-width: 200px;
 }
 
+.cursos_barra{
+    width: 26px;
+    background-color: #333;
+    align-self: stretch;
+}
+
+.cursos_barra2{
+    width: 32px;
+    background-color: #333;
+    align-self: stretch;
+}
+.cursos_barra3{
+    width: 20px;
+    background-color: #333;
+    align-self: stretch;
+}
+
+
 
 .sobre_icone{
   max-width: 53px;
@@ -247,3 +266,16 @@ font-size: 15px ;
   border-radius: 7.5px;
   border: 3px solid #262427
 }
+
+.sobremim{
+    grid-row-gap: 1.6rem;
+    flex-direction: column;
+    align-self: stretch;
+    align-items: stretch;
+    display: flex;
+} 
+
+.sobre_MERN{
+    max-width: 49px;
+}
+
